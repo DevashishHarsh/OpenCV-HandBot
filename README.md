@@ -19,10 +19,13 @@ This project uses **MediaPipe** for hand tracking, **OpenCV** for camera input, 
 - Easy setup using `requirements.py`.
 
 ## URDF Model
+
 ![HandBot](assets/handbot.png)
+
 The URDF Model is created in Fusion 360 and then converted to URDF using [fusion2urdf by syuntoku14](https://github.com/syuntoku14/fusion2urdf).
 
 ![HandBot Hand](assets/handbothand.png)
+
 It has a accurately modelled arm with 15 joint hand ( 3 for each finger ) allowing for a fluid motion of fingers.
 
 
@@ -59,9 +62,10 @@ python hand_trainer.py
 
 > Press "n" after 100 samples to collect data for a new pose or "esc" to exit.
 
-**The trainer also has a file checker that helps you in check the files and also open the colab notebook that will help you train your model based on your dataset. You will be prompted to run it after every data collection run so make sure to keep your dataset in check**
+**The trainer also has a file checker that helps you in check the files and also open the colab notebook that will help you train your model based on your dataset. You will be prompted to run it after every data collection run so make sure to keep your dataset in check.**
 
 You can open the training colab file from this [![Training](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/DevashishHarsh/OpenCV-HandBot/blob/main/Train_Hand_Model.ipynb) or using the file checker.
+
 > All the created files will be in the model folder and also the files downloaded from colab should be put inside the "training_data" folder to run modelrun.py to check the trained model.
 ```
 cd trainer/training_data
